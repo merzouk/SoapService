@@ -1,0 +1,126 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://org.com/personService"
+	targetNamespace="http://org.com/personService"
+	elementFormDefault="qualified">
+
+	<xs:element name="addPersonRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="newPersonRequest" type="tns:person" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="addPersonResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="newPersonResponse" type="tns:person" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="updatePersonRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="updatePersonRequest" type="tns:person" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="updatePersonResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="updatePersonResponse" type="tns:person" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getPersonByFirstNameRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="firstname" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="getPersonByFirstNameResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personvalues" type="tns:personlist" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getPersonByLastNameRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="larstname" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="getPersonByLastNameResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personvalues" type="tns:personlist" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="readListPersonRequest">
+		<xs:complexType>
+			<xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="readListPersonResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personValues" type="tns:personlist" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getPersonByIdRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="getPersonByIdResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personById" type="tns:person" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="deletePersonByIdRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="deletePersonByIdResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="result" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="person">
+		<xs:sequence>
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="firstname" type="xs:string" />
+			<xs:element name="lastname" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="personlist">
+		<xs:sequence>
+			<xs:element name="Person" type="tns:person"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+</xs:schema>
