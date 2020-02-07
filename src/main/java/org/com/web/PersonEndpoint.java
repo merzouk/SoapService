@@ -30,7 +30,12 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 /**
  * 
- * A Renseigner.
+ * @Endpoint – registers the class with Spring WS as a Web Service Endpoint
+ * @PayloadRoot – defines the handler method according to the namespace and localPart attributes
+ * @ResponsePayload – indicates that this method returns a value to be mapped to the response payload
+ * @RequestPayload – indicates that this method accepts a parameter to be mapped from the incoming request
+ * 
+ * 
  * @author  : Merzouk
  * @project : manageServiceWeb
  * @package : org.com.web
