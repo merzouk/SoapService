@@ -8,5 +8,5 @@ CREATE TABLE test.Person (
  
 INSERT INTO test.Person (id, firstname, lastname) VALUES
   (1, 'Merzouk', 'MENHOUR'),
-  (2, 'Ryan', 'MENHOUR'),
-  (3, 'Assia', 'MENHOUR');
+  (2, 'Rool', 'MENHOUR'),
+  (3, 'Cool', 'MENHOUR');
