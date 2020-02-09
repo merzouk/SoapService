@@ -1,28 +1,3 @@
-/*
- *--------------------------------------------------------
- * Administrateur
- *--------------------------------------------------------
- * Project     : manageServiceWeb
- *
- * Copyright Administrateur,  All Rights Reserved.
- *
- * This software is the confidential and proprietary
- * information of Administrateur.
- * You shall not disclose such Confidential Information
- * and shall use it only in accordance with the terms
- * of the license agreement you entered into with
- * Administrateur.
- *-------------------------------------------------------- 
- * 
- * Fichier 		:	ReadListPersonByFirstName.java
- * Créé le 		: 	7 févr. 2020 à 12:33:33
- * Auteur		: 	Merzouk
- * 
- * Description 	:
- * 
- *---------------------------------------------------------
- */
-
 package org.com;
 
 import java.util.List;

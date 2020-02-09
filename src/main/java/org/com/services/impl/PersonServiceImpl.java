@@ -1,28 +1,3 @@
-/*
- *--------------------------------------------------------
- * Administrateur
- *--------------------------------------------------------
- * Project     : webapp
- *
- * Copyright Administrateur,  All Rights Reserved.
- *
- * This software is the confidential and proprietary
- * information of Administrateur.
- * You shall not disclose such Confidential Information
- * and shall use it only in accordance with the terms
- * of the license agreement you entered into with
- * Administrateur.
- *-------------------------------------------------------- 
- * 
- * Fichier 		:	PersonService.java
- * Créé le 		: 	28 janv. 2020 à 21:03:59
- * Auteur		: 	Merzouk
- * 
- * Description 	:
- * 
- *---------------------------------------------------------
- */
-
 package org.com.services.impl;
 
 import java.sql.SQLException;

@@ -1,28 +1,3 @@
-/*
- *--------------------------------------------------------
- * Administrateur
- *--------------------------------------------------------
- * Project     : webapp
- *
- * Copyright Administrateur,  All Rights Reserved.
- *
- * This software is the confidential and proprietary
- * information of Administrateur.
- * You shall not disclose such Confidential Information
- * and shall use it only in accordance with the terms
- * of the license agreement you entered into with
- * Administrateur.
- *-------------------------------------------------------- 
- * 
- * Fichier 		:	PersonDao.java
- * Créé le 		: 	28 janv. 2020 à 19:22:50
- * Auteur		: 	Merzouk
- * 
- * Description 	:
- * 
- *---------------------------------------------------------
- */
-
 package org.com.dao;
 
 import java.util.List;
